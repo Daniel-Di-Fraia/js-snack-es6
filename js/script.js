@@ -25,7 +25,7 @@ const biciclette = [
 ];
 
 //facciamo uscire in console l array di oggetti
-console.log(biciclette);
+// console.log(biciclette);
 
 //creiamo una variabile che conterrà la bicicletta piu leggera
 let softBike = biciclette[0];
@@ -45,6 +45,32 @@ console.log(`La bici più leggera è la ${softBike.nome} e pesa ${softBike.peso}
 
 //SNACK 2
 
+//creiamo un array di squadre con proprietà nome, punti fatti, falli subiti.
+const squadre = [
+  { nome: "Juventus", punti: 0, falliSubiti: 0 },
+  { nome: "Inter", punti: 0, falliSubiti: 0 },
+  { nome: "Milan", punti: 0, falliSubiti: 0 },
+  { nome: "Napoli", punti: 0, falliSubiti: 0 },
+  { nome: "Roma", punti: 0, falliSubiti: 0 },
+  { nome: "Lazio", punti: 0, falliSubiti: 0 }
+];
+
+//creiamo un nuovo array dove aggiungeremo fallisubiti e nome della squadra
+let arrayTeams = [];
+
+//ciclo per aggiungere un numero random alle proprietà "punti" e "falli subiti"
+for(let i = 0; i < squadre.length; i++){
+  squadre[i].punti = Random(0,100);
+  squadre[i].falliSubiti = Random(0,450);
+  arrayTeams.push(squadre[i].nome, squadre[i].falliSubiti);
+}
+//stampiamo in console l'array con solo i nomi e i falli subiti delle squadre
+console.log(arrayTeams);
+
+//creiamo una funzione per generare numeri random min max
+function Random(min,max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 
 
