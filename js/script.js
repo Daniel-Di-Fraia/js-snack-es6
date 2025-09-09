@@ -12,3 +12,35 @@
 
 
 //SNACK 1
+
+//creiamo un array con dentro degli oggetti bicicletta che hanno 
+//come proprietà "nome" e "peso"
+const biciclette = [
+  { nome: "Bianchi Sprint", peso: 7.8 },
+  { nome: "Trek Domane", peso: 8.2 },
+  { nome: "Specialized Allez", peso: 7.5 },
+  { nome: "Cannondale Synapse", peso: 8.0 },
+  { nome: "Giant TCR", peso: 7.2 },
+  { nome: "Scott Addict", peso: 7.4 }
+];
+
+console.log(biciclette);
+
+let softBike = biciclette[0];
+
+for (let i = 0; i < biciclette.length; i++) {
+    const bici = biciclette[i];
+    if(bici.peso < softBike.peso){
+        softBike = bici;
+    }
+}
+
+console.log(`La bici più leggera è la ${softBike.nome} e pesa ${softBike.peso} kg`);
+
+
+//SNACK 2
+
+
+
+
+
