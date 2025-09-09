@@ -66,6 +66,7 @@ for(let i = 0; i < squadre.length; i++){
 }
 //stampiamo in console l'array con solo i nomi e i falli subiti delle squadre
 console.log(arrayTeams);
+console.log(squadre);
 
 //creiamo una funzione per generare numeri random min max
 function Random(min,max){
