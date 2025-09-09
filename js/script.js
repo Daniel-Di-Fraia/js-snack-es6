@@ -24,10 +24,14 @@ const biciclette = [
   { nome: "Scott Addict", peso: 7.4 }
 ];
 
+//facciamo uscire in console l array di oggetti
 console.log(biciclette);
 
+//creiamo una variabile che conterrà la bicicletta piu leggera
 let softBike = biciclette[0];
 
+
+//ciclo for per il controllo della nuova variabile softBike con l'array di oggetti biciclette
 for (let i = 0; i < biciclette.length; i++) {
     const bici = biciclette[i];
     if(bici.peso < softBike.peso){
@@ -35,6 +39,7 @@ for (let i = 0; i < biciclette.length; i++) {
     }
 }
 
+//stampiamo il risultato in console (bicicletta piu leggera)
 console.log(`La bici più leggera è la ${softBike.nome} e pesa ${softBike.peso} kg`);
 
 
