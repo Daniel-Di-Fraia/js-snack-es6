@@ -62,7 +62,7 @@ let arrayTeams = [];
 for(let i = 0; i < squadre.length; i++){
   squadre[i].punti = Random(0,100);
   squadre[i].falliSubiti = Random(0,450);
-  arrayTeams.push(squadre[i].nome, squadre[i].falliSubiti);
+  arrayTeams.push({nome: squadre[i].nome, falliSubiti: squadre[i].falliSubiti});
 }
 //stampiamo in console l'array con solo i nomi e i falli subiti delle squadre
 console.log(arrayTeams);
